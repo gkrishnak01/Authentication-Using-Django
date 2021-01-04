@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main" style="padding-top: 100px;">
+    <center><p class="sign">
+        {% if text %}
+            {{text}}
+        {% else %}
+            Login Required
+        {% endif %}
+    </p></center>
+    <form action="/logout">
+        <center><button type="submit" class="submit">
+            {% if text %}
+                Logout
+            {% else %}
+                Login
+            {% endif %}
+        </button></center>
+    </form>
+</div>
+    
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main">
+    <center><p class="sign">Login</p></center>
+    <center>{{text}}</center>
+    <form action="." method="POST" style="margin-top: 50px;"> {% csrf_token %}
+        <input type="text" class="text" placeholder="username" name="username"/>
+        <input type="password" class="text" placeholder="password" name="password" />
+        <center><input type="submit" class="submit" value="Login" /></center>
+    </form>
+    <form action="signup" method="POST" style="margin-top: 50px;" >{% csrf_token %}
+        <center><input type="submit" class="submit" value="Dont have an account? Sign Up" /></center>
+    </form>
+</div>
+    
+{% endblock %}
+
