@@ -1,3 +1,4 @@
+Add a secret key in settings.py
 This is a sample program for an authentication app in a django project.
 To add this app to your project:
     Copy Authentication to your project
